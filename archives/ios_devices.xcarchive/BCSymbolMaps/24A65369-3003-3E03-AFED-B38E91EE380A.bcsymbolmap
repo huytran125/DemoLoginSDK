@@ -1,0 +1,13 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+/Users/tranquanghuy/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk
+iPhoneOS14.4.sdk
+/Users/tranquanghuy/Library/Developer/Xcode/DerivedData/DemoLoginSDK-bsfgdbjrpcjigpegrckjipprgxbm/Build/Intermediates.noindex/ArchiveIntermediates/DemoLoginSDK/IntermediateBuildFilesPath/DemoLoginSDK.build/Release-iphoneos/DemoLoginSDK.build/DerivedSources/DemoLoginSDK_vers.c
+/Users/tranquanghuy/Documents/FrameworkObjectiveC/DemoLoginSDK
+-[DemoLoginViewController viewDidLoad]
+_OBJC_SELECTOR_REFERENCES_
+__OBJC_METACLASS_RO_$_DemoLoginViewController
+__OBJC_$_INSTANCE_METHODS_DemoLoginViewController
+__OBJC_CLASS_RO_$_DemoLoginViewController
+/Users/tranquanghuy/Documents/FrameworkObjectiveC/DemoLoginSDK/DemoLoginSDK/DemoLoginViewController.m
+DemoLoginSDK/DemoLoginViewController.m

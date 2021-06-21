@@ -182,7 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcodebuild archive -scheme DemoLoginSDK -destination=\"iOS\" -archivePath /tmp/xcf/ios.xcarchive -derivedDataPath /tmp/iphoneos -sdk iphoneos SKIP_INSTALL=NO \n\n\nxcodebuild archive -scheme DemoLoginSDK -destination=\"iOS Simulator\" -archivePath /tmp/xcf/iossimulator.xcarchive -derivedDataPath /tmp/iphoneos -sdk iphonesimulator SKIP_INSTALL=NO\n\n\nxcodebuild -create-xcframework -framework /tmp/xcf/ios.xcarchive/Products/Library/Frameworks/DemoLoginSDK.framework -framework /tmp/xcf/iossimulator.xcarchive/Products/Library/Frameworks/DemoLoginSDK.framework -output DemoLoginSDK.xcframework\n";
+			shellScript = "xcodebuild archive \\\n  -scheme DemoLoginSDK \\\n  -sdk iphoneos \\\n  -archivePath \"archives/ios_devices.xcarchive\" \\\n  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \\\n  SKIP_INSTALL=NO\n  \nxcodebuild archive \\\n  -scheme DemoLoginSDK \\\n  -sdk iphonesimulator \\\n  -archivePath \"archives/ios_simulators.xcarchive\" \\\n  BUILD_LIBRARY_FOR_DISTRIBUTION=YES \\\n  SKIP_INSTALL=NO\n\nxcodebuild -create-xcframework \\\n    -framework archives/ios_devices.xcarchive/Products/Library/Frameworks/DemoLoginSDK.framework \\\n   -framework archives/ios_simulators.xcarchive/Products/Library/Frameworks/DemoLoginSDK.framework \\\n  -output DemoLoginSDK.xcframework\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

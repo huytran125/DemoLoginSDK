@@ -1,0 +1,6 @@
+framework module DemoLoginSDK {
+  umbrella header "DemoLoginSDK.h"
+
+  export *
+  module * { export * }
+}
